@@ -2,19 +2,19 @@
 
 ## Getting Started
 
-Install dependencies,
+导入项目依赖,
 
 ```bash
 $ npm i
 ```
 
-Start the dev server,
+运行项目,
 
 ```bash
 $ npm start
 ```
 
-Build documentation,
+文档站点构建,
 
 ```bash
 $ npm run docs:build

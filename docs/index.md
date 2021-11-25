@@ -1,9 +1,9 @@
 ---
 hero:
   title: dumi-lib
-  desc: dumi-lib site example
+  desc: 组件库
   actions:
-    - text: Getting Started
+    - text: 快速上手
       link: /components
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
