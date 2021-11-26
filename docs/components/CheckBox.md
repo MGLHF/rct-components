@@ -22,7 +22,7 @@ nav:
 
 ```tsx
 import React from 'react';
-import { CheckBox } from 'dumi-lib';
+import { CheckBox } from 'magic-components';
 
 export default () => {
   return (
@@ -42,7 +42,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { CheckBox } from 'dumi-lib';
+import { CheckBox } from 'magic-components';
 
 export default () => {
   return (
@@ -58,7 +58,7 @@ export default () => {
 
 ```tsx
 import React, { useState, useEffect } from 'react';
-import { CheckBox } from 'dumi-lib';
+import { CheckBox } from 'magic-components';
 
 export default () => {
   const [indeterminate, setIndeterminate] = useState(false);
@@ -121,7 +121,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { CheckBox } from 'dumi-lib';
+import { CheckBox } from 'magic-components';
 
 export default () => {
   const [indeterminate, setIndeterminate] = useState(false);
@@ -201,7 +201,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { CheckBox } from 'dumi-lib';
+import { CheckBox } from 'magic-components';
 
 export default () => {
   const [value, setValue] = useState(['A']);
