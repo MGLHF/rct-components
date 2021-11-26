@@ -4,7 +4,7 @@ import theme from './theme';
 export default defineConfig({
   title: 'magic-components',
   base: '/magic-components',
-  publicPath: './',
+  publicPath: '/magic-components/',
   exportStatic: {},
   outputPath: 'docs-dist',
   mode: 'site',
