@@ -49,7 +49,7 @@
     (n.o = function (e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (n.p = '/magic-components/'),
+    (n.p = './'),
     n((n.s = 0));
 })({
   '++zV': function (e, t, n) {
@@ -35495,7 +35495,7 @@
   },
   q3YX: function (e) {
     e.exports = JSON.parse(
-      '{"menus":{"en-US":{"*":[{"path":"/","title":"Hello magic-components!","meta":{}}],"/components":[{"title":"\u57fa\u7840\u7ec4\u4ef6","path":"/components/base","meta":{},"children":[{"path":"/components/base/check-box","title":"CheckBox","meta":{}}]}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{"en-US":[{"title":"\u7ec4\u4ef6","path":"/components"}]},"title":"magic-components","logo":"https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png","mode":"site","repository":{"url":"","branch":"master"},"theme":{},"exportStatic":{}}',
+      '{"menus":{"en-US":{"*":[{"path":"/","title":"Hello magic-components!","meta":{}}],"/components":[{"title":"\u57fa\u7840\u7ec4\u4ef6","path":"/components/base","meta":{},"children":[{"path":"/components/base/check-box","title":"CheckBox","meta":{}}]}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{"en-US":[{"title":"\u7ec4\u4ef6","path":"/components"}]},"title":"magic-components","mode":"site","repository":{"url":"","branch":"master"},"theme":{},"exportStatic":{}}',
     );
   },
   qHiR: function (e, t, n) {},

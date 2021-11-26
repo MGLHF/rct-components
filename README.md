@@ -2,4 +2,4 @@
 
 ## 文档（./DEV.md）
 
-## 开始使用（./docs-dist.html）
+## 开始使用（./docs-dist/index.html）
