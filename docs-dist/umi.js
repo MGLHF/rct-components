@@ -49,7 +49,7 @@
     (n.o = function (e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (n.p = '/magic-components/'),
+    (n.p = '/magic-components/docs-dist/'),
     n((n.s = 0));
 })({
   '++zV': function (e, t, n) {
