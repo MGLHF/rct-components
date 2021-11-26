@@ -1,5 +1,3 @@
 # magic-components
 
-## 文档（./DEV.md）
-
-## 开始使用（./docs-dist/index.html）
+## [开发文档](./DEV.md)
