@@ -38311,7 +38311,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/index.md',
-                updatedTime: 1637840657e3,
+                updatedTime: 1637895699e3,
                 hero: {
                   title: 'magic-components',
                   desc: '<div class="markdown"><p>\u4e00\u6b3e\u5305\u542bantd\u4e8c\u6b21\u5c01\u88c5\u4ee5\u53ca\u57fa\u4e8e\u539f\u751f\u81ea\u884c\u5c01\u88c5\u7684ui\u4e1a\u52a1\u7ec4\u4ef6\u5e93</p></div>',
@@ -38355,7 +38355,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/components/CheckBox.md',
-                updatedTime: 1637840657e3,
+                updatedTime: 1637895699e3,
                 title: 'CheckBox',
                 group: {
                   title: '\u57fa\u7840\u7ec4\u4ef6',
