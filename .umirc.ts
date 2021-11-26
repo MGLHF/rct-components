@@ -3,7 +3,7 @@ import theme from './theme';
 
 export default defineConfig({
   title: 'magic-components',
-  base: '/magic-components',
+  base: '/magic-components/docs-dist',
   publicPath: '/magic-components/docs-dist/',
   exportStatic: {},
   outputPath: 'docs-dist',
