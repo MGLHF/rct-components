@@ -2,6 +2,7 @@ import { defineConfig } from 'dumi';
 import theme from './theme';
 
 export default defineConfig({
+  logo: '/public/images/favicon.jpeg',
   title: 'magic-components',
   base: '/magic-components/docs-dist',
   publicPath: '/magic-components/docs-dist/',
