@@ -4142,8 +4142,8 @@ packages:
   /color-name/1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
-  /color-string/1.7.4:
-    resolution: {integrity: sha512-nVdUvPVgZMpRQad5dcsCMOSB5BXLljklTiaxS6ehhKxDsAI5sD7k5VmFuBt1y3Rlym8uulc/ANUN/bMWtBu6Sg==}
+  /color-string/1.8.1:
+    resolution: {integrity: sha512-AGfGNQbnXlYqPStIx3QB2XA3Wy8vjbreqklmCiGVwcoHSLN5KIpDZDflYnXlBliKHI8CTBX3PsCgG+xfZgqK8A==}
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
@@ -4158,7 +4158,7 @@ packages:
     resolution: {integrity: sha1-NUTcGYyvRJDD7MmnkLVP6f9F4WQ=}
     dependencies:
       color-convert: 1.9.3
-      color-string: 1.7.4
+      color-string: 1.8.1
     dev: true
 
   /colorette/2.0.16:
@@ -4632,8 +4632,8 @@ packages:
       whatwg-url: 8.7.0
     dev: true
 
-  /date-fns/2.26.0:
-    resolution: {integrity: sha1-+kUwVUPDksT5FOUHdf0qRGHmD70=}
+  /date-fns/2.27.0:
+    resolution: {integrity: sha512-sj+J0Mo2p2X1e306MHq282WS4/A8Pz/95GIFcsPNMPMZVI3EUrAdSv90al1k+p74WGLCruMXk23bfEDZa71X9Q==}
     engines: {node: '>=0.11'}
     dev: true
 
@@ -10588,7 +10588,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.16.3
       classnames: 2.3.1
-      date-fns: 2.26.0
+      date-fns: 2.27.0
       dayjs: 1.10.7
       moment: 2.29.1
       rc-trigger: 5.2.10_react@17.0.2

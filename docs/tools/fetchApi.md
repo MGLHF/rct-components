@@ -21,7 +21,7 @@ nav:
 ### 基本用法
 
 ```js
-import { FetchApi } from 'magic-components';
+import { FetchApi } from 'rct-components';
 const api = new FetchApi({
   baseURL: 'http://localhost:4477',
   lock: 4,

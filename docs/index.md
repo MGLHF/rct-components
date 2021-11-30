@@ -1,6 +1,6 @@
 ---
 hero:
-  title: magic-components
+  title: rct-components
   desc: 一款包含antd二次封装以及基于原生自行封装的ui业务组件库
   actions:
     - text: 快速上手
@@ -18,4 +18,4 @@ features:
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
 
-## Hello magic-components!
+## Hello rct-components!

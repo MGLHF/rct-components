@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "magic-components",
+  "name": "rct-components",
   "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",

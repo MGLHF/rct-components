@@ -21,7 +21,7 @@ nav:
 ### 基本用法
 
 ```js
-import { AxiosApi } from 'magic-components';
+import { AxiosApi } from 'rct-components';
 const api = new AxiosApi({
   baseURL: 'http://localhost:3000',
   timeout: 3000,
