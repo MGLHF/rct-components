@@ -34,12 +34,10 @@ export default () => {
       <CheckBox label="选项E" value="E"></CheckBox>
       <CheckBox label="选项F" value="F"></CheckBox>
     </>
-  );
+  )
 };
 ```
-
 ### 失效状态
-
 ```tsx
 import React from 'react';
 import { CheckBox } from 'rct-components';
@@ -50,12 +48,11 @@ export default () => {
       <CheckBox label="选项A" value="A" disabled></CheckBox>
       <CheckBox label="选项B" value="B" checked disabled></CheckBox>
     </>
-  );
+  )
 };
 ```
 
 ### 设置使用全选，部分选择状态
-
 ```tsx
 import React, { useState, useEffect } from 'react';
 import { CheckBox } from 'rct-components';
@@ -68,13 +65,9 @@ export default () => {
     { value: 'A', label: '选项A' },
     { value: 'B', label: '选项B' },
     { value: 'C', label: '选项C' },
-  ];
+  ]
   useEffect(() => {
-    if (
-      checkedData &&
-      checkedData.length > 0 &&
-      checkedData.length < checkList.length
-    ) {
+    if (checkedData && checkedData.length > 0 && checkedData.length < checkList.length) {
       setChecked(false);
       setIndeterminate(false);
     }
@@ -86,34 +79,25 @@ export default () => {
       setChecked(false);
       setIndeterminate(undefined);
     }
-  }, [checkedData]);
+  }, [checkedData])
 
   const handleChange = () => {
     setChecked(!checked);
-    setCheckedData(checked ? [] : checkList.map((i) => i.value));
+    setCheckedData(checked ? [] : checkList.map(i => i.value));
     setIndeterminate(true);
-  };
+  }
   return (
     <>
       <div>
-        <CheckBox
-          label="全选"
-          value="all"
-          checked={checked}
-          indeterminate={indeterminate}
-          onChange={() => handleChange()}
-        ></CheckBox>
+        <CheckBox label="全选" value="all" checked={checked} indeterminate={indeterminate} onChange={() => handleChange()}></CheckBox>
       </div>
-      <CheckBox.Group
-        value={checkedData}
-        onChange={(data) => setCheckedData(data)}
-      >
-        {checkList.map((el, index) => (
-          <CheckBox key={index} value={el.value} label={el.label} />
-        ))}
+      <CheckBox.Group value={checkedData} onChange={(data) => setCheckedData(data)}>
+      {checkList.map((el, index) => (
+        <CheckBox key={index} value={el.value} label={el.label}/>
+      ))}
       </CheckBox.Group>
     </>
-  );
+  )
 };
 ```
 
@@ -127,78 +111,58 @@ export default () => {
   const [indeterminate, setIndeterminate] = useState(false);
   const [value, setValue] = useState(['B', 'C', 'D', 'E', 'F']);
   const options = [
-    { label: '选项B', value: 'B' },
-    { label: '选项C', value: 'C' },
-    { label: '选项D', value: 'D' },
-    { label: '选项E', value: 'E' },
-    { label: '选项F', value: 'F' },
-  ];
+    { label: '选项A', value: 'B', checkBoxType: 'default' },
+    { label: '选项B', value: 'C', checkBoxType: 'warning' },
+    { label: '选项C', value: 'D', checkBoxType: 'danger' },
+    { label: '选项D', value: 'E', checkBoxType: 'success' },
+    { label: '选项E', value: 'F', checkBoxType: 'health' },
+  ]
   return (
     <>
       <div>
+      {options.map((item) => (
         <CheckBox
-          label="选项A1"
-          value="A1"
-          checkBoxShape="circle"
+          label={item.label}
+          value={item.value}
+          checkBoxShape='circle'
+          checkBoxType={item.checkBoxType}
           indeterminate={indeterminate}
-          checkBoxType="warning"
           onChange={(e, checked) => {
             setIndeterminate(true);
             console.log(checked);
-          }}
-        />
+         }} />
+      ))}
       </div>
       <div>
+      {options.map((item) => (
         <CheckBox
-          label="选项B"
-          value="B"
-          checkBoxShape="circle"
-          checkBoxType="default"
-          checked
-        ></CheckBox>
-        <CheckBox
-          label="选项C"
-          value="C"
-          checkBoxShape="circle"
-          checkBoxType="warning"
-          checked
-        ></CheckBox>
-        <CheckBox
-          label="选项D"
-          value="D"
-          checkBoxShape="circle"
-          checkBoxType="danger"
-          checked
-        ></CheckBox>
-        <CheckBox
-          label="选项E"
-          value="E"
-          checkBoxShape="circle"
-          checkBoxType="success"
-          checked
-        ></CheckBox>
-        <CheckBox
-          label="选项F"
-          value="F"
-          checkBoxShape="circle"
-          checkBoxType="health"
-          checked
-        ></CheckBox>
+          label={item.label}
+          value={item.value}
+          checkBoxShape='default'
+          checkBoxType={item.checkBoxType}
+          indeterminate={indeterminate}
+          onChange={(e, checked) => {
+            setIndeterminate(true);
+            console.log(checked);
+         }} />
+      ))}
       </div>
       <div>
-        <CheckBox.Group
-          value={value}
-          options={options}
-          onChange={(value) => setValue(value)}
-        />
+        <CheckBox label="选项A" value="B" checkBoxShape="circle" checkBoxType="default" checked></CheckBox>
+        <CheckBox label="选项B" value="C" checkBoxShape="circle" checkBoxType="warning" checked></CheckBox>
+        <CheckBox label="选项C" value="D" checkBoxShape="circle" checkBoxType="danger" checked></CheckBox>
+        <CheckBox label="选项D" value="E" checkBoxShape="circle" checkBoxType="success" checked></CheckBox>
+        <CheckBox label="选项E" value="F" checkBoxShape="circle" checkBoxType="health" checked></CheckBox>
+      </div>
+      <div>
+      <CheckBox.Group value={value} options={options} onChange={(value) => setValue(value)}/> 
       </div>
     </>
-  );
+  )
 };
 ```
 
 ### onChange
-
 ```tsx
 import React, { useState } from 'react';
 import { CheckBox } from 'rct-components';
@@ -209,8 +173,8 @@ export default () => {
   const onChange = (value) => {
     if (value && value.length > 3) setValue(null);
     else setValue(value);
-    console.log(value);
-  };
+    console.log(value)
+  }
   return (
     <CheckBox.Group value={value} onChange={onChange}>
       <CheckBox label="选项A" value="A"></CheckBox>
@@ -218,8 +182,9 @@ export default () => {
       <CheckBox label="选项C" value="C"></CheckBox>
       <CheckBox label="选项D" value="D"></CheckBox>
     </CheckBox.Group>
-  );
-};
+  )
+}
+
 ```
 
 ## API
